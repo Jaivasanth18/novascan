@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> uploadImage(File image) async {
     final uri = Uri.parse(
-      "http://10.0.2.2:5000/analyze",
+      "https://novascan.onrender.com",
     ); // Replace with your IP
     final request = http.MultipartRequest("POST", uri);
     request.files.add(await http.MultipartFile.fromPath('image', image.path));
