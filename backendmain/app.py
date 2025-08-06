@@ -4,8 +4,10 @@ import cv2
 import mediapipe as mp
 from PIL import Image
 from ultralytics import YOLO
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Load YOLO model
 yolo_model = YOLO("yolov8n.pt")  # or yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt
