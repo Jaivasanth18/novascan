@@ -4,5 +4,5 @@ flask-cors==3.0.10
 numpy
 ultralytics
 opencv-python
-mediapipe
+mediapipe==0.10.3
 Pillow
