@@ -105,7 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             ListTile(
               leading: Icon(Icons.import_contacts_outlined),
-              title: Text('About US'),
+              title: Text('About us'),
               onTap: () {
                 Navigator.pop(context);
               },
