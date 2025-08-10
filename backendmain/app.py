@@ -9,6 +9,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/ping", methods=["GET"])
+def ping():
+    return "pong", 200
 # Load YOLO model
 yolo_model = YOLO("yolov8n.pt")  # or yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt
 
